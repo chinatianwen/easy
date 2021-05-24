@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <title>游龙学习库</title>
+    <link href="__STATIC__/web/css/about.6719629f.css" rel="prefetch">
+    <link href="__STATIC__/web/js/about.9b454bed.js" rel="prefetch">
+    <link href="__STATIC__/web/css/app.dd783f3e.css" rel="preload" as="style">
+    <link href="__STATIC__/web/css/chunk-vendors.5c507891.css" rel="preload" as="style">
+    <link href="__STATIC__/web/js/app.ea29108f.js" rel="preload" as="script">
+    <link href="__STATIC__/web/js/chunk-vendors.18418fac.js" rel="preload" as="script">
+    <link href="__STATIC__/web/css/chunk-vendors.5c507891.css" rel="stylesheet">
+    <link href="__STATIC__/web/css/app.dd783f3e.css" rel="stylesheet">
+    <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+        .snowf-canvas[data-v-107894b6] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%
+        }
+
+        a{
+            text-decoration:none;
+        }
+    </style>
+    <script>
+        var autio = document.getElementsByClassName('autoplay');
+        autio.play;
+    </script>
+</head>
+<body class="" style="" >
+<noscript><strong>We're sorry but 游龙学习库 doesn't work properly without JavaScript enabled. Please enable it to
+    continue.</strong></noscript>
+<div id="app">
+    <div data-v-3291ac35="">
+        <div data-v-3291ac35="">
+            <div data-v-3291ac35="" class="home">
+                <div data-v-3291ac35="" class="page1">
+                    <div data-v-3291ac35="" class="menu">
+                        <ul data-v-3291ac35="" class="menu-ul">
+                            <li data-v-3291ac35=""><span data-v-3291ac35="" class="s1">游龙制作</span><span
+                                    data-v-3291ac35="" class="s2">ENGLISH WORDS</span></li>
+                            <li data-v-3291ac35=""><span data-v-3291ac35="" class="s1">真正用心</span><span
+                                    data-v-3291ac35="" class="s2">ENGLISH WORDS</span></li>
+                            <li data-v-3291ac35=""><span data-v-3291ac35="" class="s1">持续优化</span><span
+                                    data-v-3291ac35="" class="s2">ENGLISH WORDS</span></li>
+                            <li data-v-3291ac35=""><span data-v-3291ac35="" class="s1">持续更新</span><span
+                                    data-v-3291ac35="" class="s2">ENGLISH WORDS</span></li>
+                        </ul>
+                    </div>
+                    <div data-v-3291ac35="" class="biaoti"><h1 data-v-3291ac35="" class="vintage">游 龙 制 作</h1>
+                        <div data-v-3291ac35="" class="miaoshu"><span data-v-3291ac35="">版本修复</span><span
+                                data-v-3291ac35="">版本修改</span><span data-v-3291ac35="">高级假人</span></div>
+                        <div data-v-3291ac35="" class="miaoshu"><span data-v-3291ac35="">添加地图</span><span
+                                data-v-3291ac35="">添加装备</span><span data-v-3291ac35="">添加怪物</span></div>
+                        <div data-v-3291ac35="" class="miaoshu"><span data-v-3291ac35="">插件添加</span><span
+                                data-v-3291ac35="">插件转换</span><span data-v-3291ac35="">做大背包</span></div>
+                    </div>
+                    <div data-v-3291ac35="" class="shuoming">本站所有版本皆本人用心制作/修复、持续更新！</div>
+                    <div data-v-3291ac35="" class="mouseTips tiaodong" onclick="buFunction()"></div>
+                </div>
+                <div data-v-3291ac35="" class="page2">
+                    <div data-v-3291ac35="" class="main">
+<!--                        <form method="post" action="index.html">-->
+                        <div data-v-3291ac35="" class="el-row"
+                             style="margin-left: -5px; margin-right: -5px; margin-bottom: 20px;">
+                            <div data-v-3291ac35="" class="el-col el-col-6"
+                                 style="padding-left: 5px; padding-right: 5px;">
+                                <div data-v-3291ac35="" class="el-input el-input--mini el-input--suffix">
+                                    <input type="text" id="keyword" autocomplete="off" placeholder="请输入要搜索的内容" class="el-input__inner">
+                                </div>
+                            </div>
+                            <div data-v-3291ac35="" class="el-col el-col-18"
+                                 style="padding-left: 5px; padding-right: 5px;">
+                                <button data-v-3291ac35="" type="submit" class="el-button el-button--primary el-button--mini"
+                                        style="margin-right: 20px;" onclick="search()">
+                                    <span>搜索</span>
+                                </button>
+
+                                {foreach $cate as $gory}
+                                <label data-v-3291ac35="" class="el-checkbox is-checked"><span
+                                        class="el-checkbox__input is-checked">
+                                    <input type="checkbox" checked class="el-checkbox__inner" value="{$gory.id}" name="checkbox" onclick="search()">
+                                </span><span class="el-checkbox__label">{$gory.title}</span>
+                                </label>
+                                {/foreach}
+
+                                <a href="{:url('/web/Beibao/beibao')}"><span data-v-3291ac35="" class="link-span">代做大背包30M，点我选材
+                                    <img data-v-3291ac35="" src="__STATIC__/web/img/click.c5f42ef5.gif" class="coupon-icon">
+                                </span></a></div>
+
+
+                        </div>
+<!--                        </form>-->
+                        <div data-v-3291ac35=""
+                             class="el-table el-table--fit el-table--fluid-height el-table--scrollable-y el-table--enable-row-hover el-table--enable-row-transition el-table--mini"
+                             style="width: 100%; max-height: 655px;">
+                            <div class="hidden-columns">
+                                <div data-v-3291ac35=""></div>
+                                <div data-v-3291ac35=""></div>
+                                <div data-v-3291ac35=""></div>
+                                <div data-v-3291ac35=""></div>
+                            </div>
+                            <div class="el-table__header-wrapper">
+                                <table cellspacing="0" cellpadding="0" border="0" class="el-table__header"
+                                       style="width: 1280px;">
+                                    <colgroup>
+                                        <col name="el-table_1_column_1" width="130">
+                                        <col name="el-table_1_column_2" width="65">
+                                        <col name="el-table_1_column_3" width="768">
+                                        <col name="el-table_1_column_4" width="300">
+                                        <col name="gutter" width="17">
+                                    </colgroup>
+                                    <thead class="has-gutter">
+                                    <tr class="">
+                                        <th colspan="1" rowspan="1" class="el-table_1_column_1     is-leaf">
+                                            <div class="cell">更新日期</div>
+                                        </th>
+                                        <th colspan="1" rowspan="1" class="el-table_1_column_2  is-center   is-leaf">
+                                            <div class="cell">大小</div>
+                                        </th>
+                                        <th colspan="1" rowspan="1" class="el-table_1_column_3     is-leaf">
+                                            <div class="cell">学习资料详情</div>
+                                        </th>
+                                        <th colspan="1" rowspan="1" class="el-table_1_column_4     is-leaf">
+                                            <div class="cell">更新说明</div>
+                                        </th>
+                                        <th class="gutter" style="width: 17px;"></th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="el-table__body-wrapper is-scrolling-none" style="max-height: 619px;">
+                                <table cellspacing="0" cellpadding="0" border="0" class="el-table__body"
+                                       style="width: 1263px;">
+                                    <colgroup>
+                                        <col name="el-table_1_column_1" width="130">
+                                        <col name="el-table_1_column_2" width="65">
+                                        <col name="el-table_1_column_3" width="768">
+                                        <col name="el-table_1_column_4" width="300">
+                                    </colgroup>
+                                    <tbody>
+                                    <div class="datalist">
+                                    {foreach $data as $vo}
+                                    <tr class="el-table__row">
+                                        <td rowspan="1" colspan="1" class="el-table_1_column_1  ">
+                                            <div class="cell">
+                                                <span data-v-3291ac35="" style="color: green; font-weight: bold;">
+                                                    {$vo.update_time}
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td rowspan="1" colspan="1" class="el-table_1_column_2 is-center ">
+                                            <div class="cell">
+                                                <span data-v-3291ac35="" style="color: rgb(237, 166, 78); font-weight: bold;">
+                                                    {$vo.size}M
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td rowspan="1" colspan="1" class="el-table_1_column_3  ">
+                                            <div class="cell">
+                                                <a href="https://docs.qq.com/doc/DVG1iVGpiRElIS21B" target="_blank">
+                                                    <span data-v-3291ac35="" style="color: red; font-weight: bold; cursor: pointer;">
+                                                    【{$vo.webCategory.title}】{$vo.name}
+                                                    </span >
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td rowspan="1" colspan="1" class="el-table_1_column_4  ">
+                                            <div class="cell el-tooltip">
+                                                <a href="{$vo.url}" target="_blank">
+                                                    <span data-v-3291ac35="" style="color: red; font-weight: bold; cursor: pointer;">
+                                                        {$vo.remark}
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    {/foreach}
+                                    </div>
+                                    </tbody>
+                                </table><!----><!----></div><!----><!----><!----><!---->
+                            <div class="el-table__column-resize-proxy" style="display: none;"></div>
+                            <div class="el-loading-mask" style="display: none;">
+                                <div class="el-loading-spinner">
+                                    <svg viewBox="25 25 50 50" class="circular">
+                                        <circle cx="50" cy="50" r="20" fill="none" class="path"></circle>
+                                    </svg><!----></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-3291ac35="" class="bottom"></div>
+                </div>
+                <div data-v-3291ac35="" class="foot"><p data-v-3291ac35="" style="color: rgb(64, 158, 255);">
+                    湘ICP备2020022730号-1</p>
+                    <p data-v-3291ac35="">
+                        Copyright © 2016- 2020
+                        <a data-v-3291ac35="" href="http://www.996pk.com/" target="_blank">996pk（www.996pk.com）</a> All
+                        Rights Reserved.
+                    </p></div>
+                <audio data-v-3291ac35="" controls="controls" autoplay="autoplay" class="autoplay"
+                       style="opacity: 0; position: fixed; left: 0px; top: 0px;">
+                    <source data-v-3291ac35="" src="__STATIC__/web/media/music.f8732f4c.mp3" type="audio/mpeg">
+                </audio>
+                <button data-v-3291ac35="" style="opacity: 0; position: fixed; left: 0px; top: 0px;"></button>
+                <div data-v-3291ac35="" id="Floatingbar">
+                    <ul data-v-3291ac35="">
+                        <li data-v-3291ac35=""><span data-v-3291ac35="">游龙制作</span></li>
+                        <li data-v-3291ac35=""><span data-v-3291ac35="">持续修复</span></li>
+                        <li data-v-3291ac35=""><span data-v-3291ac35="">更新通知</span></li>
+                        <li data-v-3291ac35=""><span data-v-3291ac35="">开关音乐</span></li>
+                        <a href="https://docs.qq.com/doc/DUGxKSU9hb294d3Vy"><li data-v-3291ac35=""><span data-v-3291ac35="">架设教程</span></li></a>
+                        <a href="https://wpa.qq.com/msgrd?v=3&uin=494448535&site=qq&menu=yes"><li data-v-3291ac35=""><span data-v-3291ac35="">联系站长</span></li></a>
+                        <li data-v-3291ac35=""><span data-v-3291ac35="" onclick="topFunction()">回到顶部</span></li>
+                    </ul>
+                </div>
+                <canvas data-v-107894b6="" data-v-3291ac35="" class="snowf-canvas" height="1858" width="1903"
+                        style="z-index: auto;"></canvas>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="__STATIC__/web/js/chunk-vendors.18418fac.js"></script>
+<script src="__STATIC__/web/js/app.ea29108f.js"></script>
+<script>
+var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement('script');
+        hm.src = "https://hm.baidu.com/hm.js?852c1cb98bc5259a8873fa572aa6f396";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })()
+</script>
+<script>
+    function search(){
+        var html='';
+        var key =  $("#keyword").val()
+
+        var checkID=[];
+        $("input[name='checkbox']:checked").each(function(i){
+            checkID[i] = $(this).val();
+        });
+        console.log(checkID)
+        // console.log(boz)
+        $.ajax({
+            url: "{:url('web/Index/search')}",
+            data: {key: key,check:checkID},
+            async: false,
+            type: 'POST',
+            dataType:"json",
+            success: function (data) {
+                if (data != '') {
+                    console.log(data)
+
+                    $.each(data, function (no, items) {
+                        $('.el-table__row').html(' ')
+
+                        html +=  "<tr class='el-table__row'>"+
+                                 "<td rowspan='1' colspan='1' class='el-table_1_column_1'>"+
+                                     "<div class='cell'>"+
+                                     "<span data-v-3291ac35='' style='color: green; font-weight: bold;'>"+
+                                     items.create_time+
+                                     "</span>"+
+                                     "</div>"+
+                                 "</td>"+
+                                 "<td rowspan='1' colspan='1' class='el-table_1_column_2 is-center' style='width:63px'>"+
+                                     "<div class='cell'>"+
+                                    "<span data-v-3291ac35='' style='color: rgb(237, 166, 78); font-weight: bold;'>"+
+                                     '&nbsp;&nbsp;'+items.size+'M'+
+                                     "</span>"+
+                                     "</div>"+
+                                "</td>"+
+                                "<td rowspan='1' colspan='1' class='el-table_1_column_3' style='width: 768px'><div class='cell'> " +
+                            "<a href='+items.url+' target='_blank'> <span data-v-3291ac35='' style='color: red; font-weight: bold; cursor: pointer;width: 768px'>"+ '&nbsp;【'+items.webCategory.title+'】'+items.name+ "</span > </a> " +
+                            "</div> </td>"+
+                            "<td rowspan='1' colspan='1' class='el-table_1_column_4' style='width:300px'><div class='cell el-tooltip' style='width:300px'>" +
+                            "<a href='' target='_blank'><span data-v-3291ac35='' style='color: red; font-weight: bold; cursor: pointer;'>"+'&nbsp;'+items.remark+ "</span></a>" +
+                            "</div></td></tr>"
+                    });
+                    $('.datalist').html(html)//显示数据，同时覆盖上一次搜索的数据
+                }else{
+                    $('.el-table__row').html(' ')
+                    html +=  "<div class=\"el-table__empty-block\" style=\"width: 1280px; height: 100%;\"><span class=\"el-table__empty-text\">没有搜索到数据，请更换搜索条件</span></div>";
+                    $('.datalist').html(html)//显示数据，同时覆盖上一次搜索的数据
+                }
+            },
+        });
+    }
+</script>
+<script>
+    // 点击按钮，返回顶部
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    // 点击按钮，返回底部
+    function buFunction() {
+        document.documentElement.scrollTop = 850;
+    }
+</script>
+<script type="text/javascript">
+    (function($){
+        $.fn.snow = function(options){
+            var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&#10052;'),
+                documentHeight     = $(document).height(),
+                documentWidth    = $(document).width(),
+                defaults = {
+                    minSize        : 10,
+                    maxSize        : 20,
+                    newOn        : 1000,
+                    flakeColor    : "#FFFFFF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF 其他颜色#AFDAEF*/
+                },
+                options    = $.extend({}, defaults, options);
+            var interval= setInterval( function(){
+                var startPositionLeft = Math.random() * documentWidth - 100,
+                    startOpacity = 0.5 + Math.random(),
+                    sizeFlake = options.minSize + Math.random() * options.maxSize,
+                    endPositionTop = documentHeight - 200,
+                    endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
+                    durationFall = documentHeight * 10 + Math.random() * 5000;
+                $flake.clone().appendTo('body').css({
+                    left: startPositionLeft,
+                    opacity: startOpacity,
+                    'font-size': sizeFlake,
+                    color: options.flakeColor
+                }).animate({
+                    top: endPositionTop,
+                    left: endPositionLeft,
+                    opacity: 0.2
+                },durationFall,'linear',function(){
+                    $(this).remove()
+                });
+            }, options.newOn);
+        };
+    })(jQuery);
+    $(function(){
+        $.fn.snow({
+            minSize: 5, /* 定义雪花最小尺寸 */
+            maxSize: 50,/* 定义雪花最大尺寸 */
+            newOn: 300  /* 定义密集程度，数字越小越密集 */
+        });
+    });
+</script>
+</body>
+</html>
